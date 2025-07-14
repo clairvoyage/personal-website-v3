@@ -24,10 +24,47 @@
           </nav>    
 
         <h1>Notion vs. Obsidian</h1>
+        <h4>July 13, 2025</h4>
     </header>
 
     <body>
-        
+        <article>
+            <p>
+                Notion and Obsidian are the two primary note-taking apps I've used, each 
+                with many pros and cons. Though they both share a structure that encourages 
+                page linking as a method of organizing pages, Notion is geared more towards 
+                collaboration and is more beginner-friendly, while Obsidian offers greater 
+                control and is best for those seeking something with more features.
+
+                <img src="images/notion-vs-obsidian" alt="My own Notion homepage">
+
+                The primary features in Notion that I found to be far better than in Obsidian 
+                was the ability to sync databases across different pages and the ability to 
+                collaborate with others and publish websites easily. 
+
+                However, Notion lacks customizable shortcuts, and certain functions
+                like taking notes in LaTeX and using the app online are clunky at best.
+
+                <img src="images/obsidian-homepage" alt="My own Obsidian homepage">
+
+                It was taking in notes in LaTeX that was the final straw that drove me to
+                finally, properly try out Obsidian. I had tried Obsidian a long time ago,
+                but soon gave up trying to get my homepage to look the way I wanted.
+
+                This time, I spent the extra effort to make my homepage as cute as possible
+                with adorable characters and a custom theme. I guess I really was just allergic
+                to a bland homepage because I still use Obsidian daily. 
+
+                While I do miss being able to sync databases across my pages and being able to
+                easily public my pages to the internet, Obsidian's impact on my primary use for it,
+                note-taking, made it 100% worth it. I now have two separate LaTeX addons for all
+                the shortcuts I could ever need, and being able to use normal markdown in Obsidian
+                rather than a restricted version in Notion has been such a lifesaver for quickly 
+                bashing down notes.
+
+                
+            </p>
+        </article>
     </body>
 
     <footer>
