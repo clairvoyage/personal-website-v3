@@ -8,8 +8,8 @@
 	<meta name="author" content="Merlin Ho" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Experiments</title>
-	<link href="images/favicon.ico" rel="icon" />
-	<link href="styles/main.css" rel="stylesheet" />
+	<link href="../images/favicon.ico" rel="icon" />
+	<link href="../styles/main.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -27,12 +27,22 @@
     </header>
 
     <main>
+        <script>
+            class HelloWorld extends HTMLElement {
+                constructor(){
+                    super();
+                    console.log("Hello World");
+                }
+            }
+        customElements.define("hello-world", HelloWorld);
+        </script>
 
+        <hello-world></hello-world>
     </main>
 
     <footer>
-        <hr/>
-		<p>Merlin Ho &copy 2025. All rights reserved</p>
+        <hr>
+		<p>Merlin Ho &copy; 2025. All rights reserved</p>
 
     </footer>
 </body>
