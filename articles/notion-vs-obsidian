@@ -18,11 +18,11 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
+                <li><a href="articles.html">Articles</a></li>
                 <li><a href="inspirations.html">Inspirations</a></li>
                 <li><a href="tools.html">Tools</a></li>
             </ul>
           </nav>    
-
         <h1>Notion vs. Obsidian</h1>
         <h4>July 13, 2025</h4>
     </header>
@@ -62,7 +62,7 @@
                 rather than a restricted version in Notion has been such a lifesaver for quickly 
                 bashing down notes.
 
-                
+
             </p>
         </article>
     </body>
