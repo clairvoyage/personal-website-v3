@@ -15,6 +15,12 @@
 	<link href="../images/favicon.ico" rel="icon">
 	<link href="../styles/main.css" rel="stylesheet">
     <link rel="canonical" href="https://warm-arithmetic-bea186.netlify.app/">
+
+    <style>
+        article-page {
+            cursor: url('../images/mini-favicon.png'), auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -32,14 +38,6 @@
     </header>
 
     <main>
-
-        <style>
-            article-page {
-                cursor: url('../images/mini-favicon.png'), auto;
-            }
-        </style>
-
-
         <article-page>
         <script>
             class HelloWorld extends HTMLElement {
@@ -74,7 +72,7 @@
         <pre>
             Using pre tag
             to write
-            <span id="last line">in separate lines</span>
+            <span id="lastLine">in separate lines</span>
         </pre>
 
         <aside>
@@ -86,6 +84,7 @@
         <caption>My Sleep Hours</caption>
         <colgroup>
             <col span="1" class="days">
+            <col class="hours">
         </colgroup>
         <tr>
             <th>Day</th>
@@ -103,7 +102,7 @@
         </table> 
         <br>
 
-        <form action="">
+        <form>
             <fieldset>
                 <legend>Basic Info</legend>
                 <label for="age">Age: </label>
@@ -158,13 +157,6 @@ Here I am using textarea to create a block of text that can be typed on.
         <video width="320" height="240" controls>
             <source src="../video/ender-lilies-trailer.mp4" type="video/mp4">
             Your browser does not support the video tag
-            <track
-                label="English"
-                kind="subtitles"
-                srclang="en"
-                src=""
-                default
-            />
         </video><br><br>
 
         <details>
@@ -234,7 +226,6 @@ Here I am using textarea to create a block of text that can be typed on.
 
         <svg width="100" height="100">
             <rect width="200" height="100"/>
-            Sorry, your browser does not support inline SVG
         </svg> <br><br>
 
         <canvas id="myCanvas" width="300" height="200" 
