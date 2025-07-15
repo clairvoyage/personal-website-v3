@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="HTML Experiments by Merlin">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="Merlin Ho">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Merlin's HTML Experiments">
+    <meta property="og:url" content="https://warm-arithmetic-bea186.netlify.app/">
+    <meta property="og:description" content="Merlin being silly and doing silly things with HTML">
+    <meta property="og:image" content="https://warm-arithmetic-bea186.netlify.app/images/lab-guy.jpeg">
+	<title>Experiments</title>
+	<link href="../images/favicon.ico" rel="icon">
+	<link href="../styles/main.css" rel="stylesheet">
+    <link rel="canonical" href="https://warm-arithmetic-bea186.netlify.app/">
+
+    <style>
+        fun-cursor-section {
+            cursor: url('../images/mini-favicon.png'), auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+          <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../articles.html">Articles</a></li>
+                <li><a href="../inspirations.html">Inspirations</a></li>
+                <li><a href="../tools.html">Tools</a></li>
+            </ul>
+          </nav>  
+        <h1>Experiments</h1>
+    </header>
+
+    <main>
+        <fun-cursor-section>
+        <script>
+            class HelloWorld extends HTMLElement {
+                constructor(){
+                    super();
+                    console.log("Hello World");
+                }
+            }
+        customElements.define("hello-world", HelloWorld);
+        </script>
+
+        <hello-world></hello-world>
+
+        <ol>
+            <li>
+                <b>Bold 1</b>, <strong>Bold 2</strong>
+            </li>
+            <li>
+                <i>Italics 1</i>, <em>Italics 2</em>
+            </li>
+            <li>
+                <del>Mistake</del>... <ins>Correction!!</ins>
+            </li>
+        </ol>
+
+        <code>
+            # Python code example <br>
+            print("Hello World")
+        </code>
+        <noscript>Turn on JavaScript to see "Hello World" in the console</noscript>
+
+        <pre>
+            Using pre tag
+            to write
+            <span id="lastLine" style="border:1px solid black">in separate lines</span>
+        </pre>
+
+        <aside>
+            Aside: I initially planned to write a haiku, but decided not to.
+        </aside>
+
+        <br>
+        <table>
+        <caption>My Sleep Hours</caption>
+        <colgroup>
+            <col span="1" class="days">
+            <col class="hours">
+        </colgroup>
+        <tr>
+            <th>Day</th>
+
+            <th>Hrs of Sleep</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>8</td>
+        </tr>
+        </table> 
+        <br>
+
+        <form>
+            <fieldset>
+                <legend>Basic Info</legend>
+                <label for="age">Age: </label>
+                <input type="text" id="age" name="age"><br><br>
+
+                <label for="fav-color">Favorite Color</label>
+                <select name="fav-color" id="fav-color">
+                    <optgroup label="Warm Colors">
+                        <option value="red">Red</option>
+                        <option value="yellow">Yellow</option>
+                    </optgroup>
+                    <optgroup label="Cool Colors">
+                        <option value="green">Green</option>
+                        <option value="blue">Blue</option>
+                    </optgroup>
+                </select><br><br>
+
+                <label for="fruit">Choose a fruit from the list:</label>
+                <input list="fruits" name="fruit" id="fruit">
+                <datalist id="fruits">
+                    <option value="Apple"></option>
+                    <option value="Banana"></option>
+                    <option value="Grape"></option>
+                    <option value="Kiwi"></option>
+                    <option value="Coconut"></option>
+                    <option value="Kumquat"></option>
+                </datalist><br><br>
+
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+        <br><br>
+
+        <label for="textarea-test">Testing Text Area</label><br>
+
+        <textarea name="textarea-test" id="textarea-test" rows="10" cols="20">
+Here I am using textarea to create a block of text that can be typed on.
+        </textarea><br>
+
+        <h3>iframe test</h3>
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/ctiZlAhQmkw?si=I4gzAOlxAgFqKsTV" 
+        title="YouTube video player" allow="accelerometer; autoplay; 
+        clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
+
+        <audio controls>
+            <source src="../audio/rosary-ender-lilies.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag
+        </audio><br><br>
+
+        <video width="320" height="240" controls>
+            <source src="../video/ender-lilies-trailer.mp4" type="video/mp4">
+            Your browser does not support the video tag
+        </video><br><br>
+
+        <details>
+            <summary>Ender Lilies: Quietus of the Knights</summary>
+            <p>
+                The video game Ender Lilies follows a girl and an immortal knight in 
+                a world with endless rain and countless undead.
+            </p>
+        </details><br><br>
+
+        <label for="progress-bar">Just a progress bar</label>
+        <progress id="progress-bar" value="50" max="100">50%</progress>
+        <br><br>
+
+        <figure>
+            <img src="../images/alert-california-loadscreen.jpeg" alt="Alert Cali-s'more'nia loading screen">
+            <figcaption>Fig. 1 - Loading screen from Alert Cali-s'more-nia game</figcaption>
+        </figure><br><br>
+
+
+        <p>A quote:</p>
+        <blockquote cite="https://donmai.moe/wiki_pages/people_die_if_they_are_killed_(meme)">
+            People die if they're killed! <br>
+            <cite>Fate: Stay Night anime, Episode 23</cite>
+        </blockquote><br><br>
+
+        <h3>Try searching</h3>
+        <search>
+            <form>
+                <input name="form-search" id="form-search" placeholder="Search my experiments">
+            </form>
+        </search>
+
+        <dialog open>Open dialog window</dialog>
+        <br><br>
+
+        <hgroup>
+            <h2>My header</h2>
+            <p>And its related paragraph</p>
+        </hgroup><br><br>
+
+        <dl>
+            <dt>Pikachu</dt>
+            <dd>Electric Mouse Pokemon</dd>
+            <dt>Charmander</dt>
+            <dd>Fire Lizard Pokemon</dd>
+        </dl><br><br>
+
+        <p>
+            <abbr title="To be honest"></abbr> TBH, this is a lot of typing.
+        </p><br>
+
+        <p>
+            A <dfn>cup</dfn> is a cylindrical container used to drink liquids.
+        </p><br>
+
+        <p>
+            Press <kbd>Ctrl</kbd> + <kbd>A</kbd> to select all text.
+        </p><br>
+
+        <button type="button">Click here!</button><br><br>
+
+        <template>
+            <p>Text that is hidden when the page loads!</p>
+        </template>
+
+        <svg width="100" height="100">
+            <rect width="200" height="100"/>
+        </svg> <br><br>
+
+        <canvas id="myCanvas" width="300" height="200" 
+        style="border:1px solid black">
+            Sorry, your browser does not support canvas
+        </canvas>
+
+        <script>
+            const canvas = document.getElementById("myCanvas");
+            const ctx = canvas.getContext("2d");
+            ctx.fillStyle="green";
+            ctx.fillRect(0,0,150,60);
+        </script><br><br>
+ 
+        <math display="block">
+            <mrow>
+                <mrow>
+                    <mi>E</mi>
+                </mrow>
+                <mo>=</mo>
+                <mrow>
+                    <mi>m</mi>
+                    <msup>
+                        <mi>c</mi>
+                        <mn>2</mn>
+                    </msup>
+                </mrow>
+            </mrow>
+        </math><br><br>
+
+        <div>
+            <p>Yahoo, a div tag!!</p>
+        </div>
+        
+    </fun-cursor-section>
+
+    </main>
+
+    <footer>
+        <br><br>
+        <hr>
+        <br><br>
+		<p>Merlin Ho &copy; 2025. All rights reserved</p>
+        <address>
+            Written by <a href="mailto:aqho@ucsd.edu">Merlin Ho</a>
+        </address>
+    </footer>
+</body>
+
+</html>
