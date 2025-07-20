@@ -1,0 +1,20 @@
+:root {
+    --font-size: 1.2rem;
+    --nav-gap: 1rem;
+}
+
+nav {
+    margin-bottom: 0rem;    
+    font-size: var(--font-size);
+    ul {
+        padding-left: 0;
+        display: flex;
+        list-style: none;
+        justify-content: left;
+        align-items: center;
+        gap: var(--nav-gap);
+    }
+    li {
+        display: table-cell;
+    }
+}

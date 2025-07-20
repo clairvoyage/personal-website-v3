@@ -1,3 +1,8 @@
+@import "nav.css";
+@import "images.css";
+@import "header-paragraph.css";
+
+ 
 @font-face {
     font-family: wittgenstein-regular;
     src: url(/styles/fonts/Wittgenstein-Regular.ttf);
@@ -13,14 +18,8 @@
     --text-color: #292626;
     --margin: 2vw 10vw;
 
-    --text-margin: 0rem 0rem 1rem 0rem;
-    --row-gap: 2rem;
-
-    --img-dimensions: 80vw;
-    --img-margin: 0rem;
-
     --horizontal-rule-margin: 0rem 0rem 2rem;
-    --header-img-maxheight: 20rem;
+    --horizontal-rule-maxheight: 60vh;
 }
 
 body {
@@ -28,10 +27,11 @@ body {
     grid-template-areas: "header" "main" "footer";
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
-    gap: 2rem;
+    gap: 0.5rem;
 
     box-sizing: border-box;
     padding: 0;
+    border-width: 0px;
     margin: var(--margin);
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -50,52 +50,19 @@ footer {
     grid-area: "footer";
 }
 
-h1,h2,h3,h4 {
-    font-family: wittgenstein-semibold-italic;
-    margin: var(--text-margin);
-    margin-bottom: 0px;
-}
-
-h1 {
-    font-size: 3rem;
-}
-
-p {
-    margin: var(--text-margin);
-}
-
-nav {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0rem;    
-    ul {
-        padding-left: 0;
-        display: flex;
-        list-style: none;
-        justify-content: left;
-        gap: var(--row-gap);
-    }
-}
-
 hr {
     margin: var(--horizontal-rule-margin);
 }
 
-img {
-    margin: var(--img-margin);
-    width: var(--img-dimensions);
-    max-height: var(--img-dimensions);
-    object-fit: cover;
+filler-char {
+    z-index: -1;
 }
 
-#header-img {
-    max-height: var(--header-img-maxheight);
-}
-
-@media(max-width: 800px) {
+@media(max-width: 700px) {
     nav {
         ul {
-            gap: 3vw;
+            gap: 2vw;
     }
     }
 }
+

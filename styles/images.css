@@ -1,0 +1,26 @@
+:root {
+    --img-width: 80vw;
+    --img-margin: 0rem;
+    --img-maxheight: 80vw;
+    --header-img-height: 60vh;
+    --page-icon-dim: 2rem;
+}
+
+img {
+    margin: var(--img-margin);
+    width: var(--img-width);
+    max-height: var(--img-maxheight);
+    object-fit: cover;
+}
+
+#header-img {
+    height: var(--header-img-height);
+    max-height: var(--horizontal-rule-maxheight);
+}
+
+#page-icon {
+    padding: 0px;
+    margin: 0px;
+    width: var(--page-icon-dim);
+    height: var(--page-icon-dim);
+}
