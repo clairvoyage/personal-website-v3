@@ -9,16 +9,20 @@
 }
 
 :root {
+    --main-font: wittgenstein-regular;
+    --header-font: wittgenstein-semibold-italic;
+
     --text-margin: 0rem 0rem 1rem 0rem;
     --text-font-size: 1.2rem;
     --text-line-height: 1.2em;
+    --bottom-margin: 0.5rem;
 }
 
 h1,h2,h3,h4 {
-    font-family: wittgenstein-semibold-italic;
-    margin: var(--text-margin);
-    margin-bottom: 0.5rem;
-    line-height: var(--text-line-height);
+    font-family: var(--header-font, serif);
+    margin: var(--text-margin, 10px);
+    margin-bottom: var(--bottom-margin, 10px);
+    line-height: var(--text-line-height, 20px);
 }
 
 h1 {
@@ -30,6 +34,6 @@ h2 {
 }
 
 p {
-    margin: var(--text-margin);
-    font-size: var(--text-font-size);
+    margin: var(--text-margin, 10px);
+    font-size: var(--text-font-size, 15px);
 }

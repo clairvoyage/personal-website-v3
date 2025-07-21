@@ -49,18 +49,27 @@
             </ul>
           </nav><hr>
         
-        <img src="images/hills.jpg" alt="Green hills" id="header-img">
+        <picture>
+            <source media="(min-width: 600px)" srcset="images/hills.jpg">           
+            <img src="images/small-images/hills.jpeg" alt="Green hills" style="object-fit: cover;">
+        </picture>
         <h1>ARTICLES</h1>
     </header>
 
     <main>
-        <img src="images/obsidian-homepage.jpeg" alt="My own homepage in Obsidan" id="obsidian-homepage">
+        <picture id="obsidian-homepage">
+            <source media="(min-width: 600px)" srcset="images/obsidian-homepage.jpeg">           
+            <img src="images/small-images/obsidian-homepage.jpeg" alt="My own homepage in Obsidan" id="obsidian-homepage">
+        </picture>
         <article-desc id="notion-vs-obsidian">
             <h2><a href="articles/notion-vs-obsidian.html">Notion vs. Obsidian</a></h2>
             <p>Beginner-friendly "second brain" versus a haven for customization. Which should you try?</p>
         </article-desc>
         
-        <img src="images/lab-guy.jpeg" alt="Man wearing face mask, safety goggles, and labcoat" width="400" id="lab-guy">
+        <picture id="lab-guy">
+            <source media="(min-width: 600px)" srcset="images/lab-guy.jpeg">           
+            <img src="images/small-images/lab-guy.jpeg" alt="Man wearing face mask, safety goggles, and labcoat">
+        </picture>
         <article-desc id="experiments">
             <h2><a href="articles/experiments.html">Experiments</a></h2>
             <p>In which Merlin does funny things with HTML tags</p>

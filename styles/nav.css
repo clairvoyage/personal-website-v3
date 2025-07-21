@@ -6,7 +6,7 @@
 nav {
     display: block;
     margin-bottom: 0rem;    
-    font-size: var(--font-size);
+    font-size: var(--font-size, 15px);
 }
 
 #mini-page-links {
@@ -19,7 +19,7 @@ nav {
     list-style: none;
     justify-content: left;
     align-items: center;
-    gap: var(--nav-gap);
+    gap: var(--nav-gap, 10px);
 }
 
 
@@ -79,7 +79,7 @@ nav {
         display: grid;
         margin: 0;
         grid-template-rows: 1fr 1fr;
-        grid-template-columns: 4em 3em 7em 3em 4em;
+        grid-template-columns: 4em 2em 7em 2em 4em;
         grid-template-areas:
             "page-icon filler1 index filler2 projects"
             "articles filler3 inspirations filler4 tools"
@@ -87,8 +87,8 @@ nav {
     }
 
     #header-img {
-        width: var(10px) !important;
-        height: var(10px) !important;
+        width: 10px !important;
+        height: 10px !important;
     }
 }
 

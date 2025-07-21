@@ -4,7 +4,6 @@
     --img-width: 35vw;
     --img-height: 30vw;
     --header-img-height: 50vh;
-    --horizontal-rule-maxheight: 60vh;
     --header-img-width: 80vw;
     --col-gap: 10vw;
     --row-gap: 2rem;
@@ -15,9 +14,8 @@ main {
     margin: 0;
     grid-template-rows: 1fr auto auto auto auto auto auto auto auto auto;
     grid-template-columns: 1fr auto;
-    max-width: 80vw;
-    column-gap: var(--col-gap);
-    row-gap: var(--row-gap);
+    column-gap: var(--col-gap, 10px);
+    row-gap: var(--row-gap, 2px);
     grid-template-areas: 
         "alert-cali-title   alert-cali-title"
         "alert-cali-p1      alert-cali-img1"
@@ -33,23 +31,27 @@ main {
         "sweet-sugar-img2   sweet-sugar-p2";
 }
 
-img {
-    width: var(--img-width);
-    height: var(--img-height);
+main {
+    img {
+        width: var(--img-width, 400px);
+        height: var(--img-height, 300px);
+    }
 }
 
-#header-img {
-    width: var(--header-img-width);
-    height: var(--header-img-height);
-    max-height: var(--horizontal-rule-maxheight);
+header {
+    img {
+        width: var(--header-img-width, 800px);
+        height: var(--header-img-height, 400px);
+    }
 }
+
 
 #alert-cali-title {
     grid-area: alert-cali-title;
 }
 
 #alert-cali-p1{
-    grid-area: "alert-cali-p1;
+    grid-area: alert-cali-p1;
 }
 
 #alert-cali-img1 {

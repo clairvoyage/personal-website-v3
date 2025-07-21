@@ -8,21 +8,22 @@
 }
 
 img {
-    margin: var(--img-margin);
-    width: var(--img-width);
-    max-height: var(--img-maxheight);
+    margin: var(--img-margin, 20px);
+    width: var(--img-width, 400px);
+    max-height: var(--img-maxheight, 300px);
     object-fit: cover;
 }
 
-#header-img {
-    width: var(--img-width);
-    height: var(--header-img-height);
-    max-height: var(--horizontal-rule-maxheight);
+header {
+    img {
+        width: var(--header-img-width, 800px);
+        height: var(--header-img-height, 400px);
+    }
 }
 
 #page-icon {
     padding: 0px;
     margin: 0px;
-    width: var(--page-icon-dim);
-    height: var(--page-icon-dim);
+    width: var(--page-icon-dim, 20px);
+    height: var(--page-icon-dim, 20px);
 }

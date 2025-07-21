@@ -13,7 +13,6 @@ main {
     margin: 0;
     grid-template-rows: 1fr auto auto auto auto auto;
     grid-template-columns: 1fr auto;
-    max-width: 80vw;
     gap: 2em;
     grid-template-areas: 
         "coding-tools-title coding-tools-title "
@@ -25,14 +24,8 @@ main {
 }
 
 img {
-    width: var(--img-width);
-    max-height: var(--img-height);
-}
-
-#header-img {
-    width: var(--header-img-width);
-    height: var(--header-img-height);
-    max-height: var(--horizontal-rule-maxheight);
+    width: var(--img-width, 400px);
+    height: var(--img-heigh, 300px);
 }
 
 #coding-tools-title {

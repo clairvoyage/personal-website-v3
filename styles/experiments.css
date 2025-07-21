@@ -1,0 +1,18 @@
+@import "main.css";
+
+h2 {
+    position: relative;
+    animation-name: rotate;
+    animation-duration: 4s;
+}
+
+.color-mix {
+    color: color(display-p3 1 1 1);
+    background-color: color-mix(in srgb, green 30%, black 70%);
+}
+
+@keyframes rotate {
+    0% {color: red; transform: rotate(0deg);}
+    50%{color: blueviolet; transform: rotate(90deg);}
+    100%{color: blue; transform: rotate(180deg);}
+}
