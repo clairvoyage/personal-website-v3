@@ -1,18 +1,24 @@
 :root {
     --img-width: 80vw;
-    --img-margin: 0rem;
     --img-maxheight: 80vw;
     --header-img-height: 50vh;
+    --header-img-width: 80vw;
     --page-icon-dim: 2rem;
     --horizontal-rule-maxheight: 60vh;
 }
 
 img {
-    margin: var(--img-margin, 20px);
-    width: var(--img-width, 400px);
-    max-height: var(--img-maxheight, 300px);
     object-fit: cover;
+    margin: 0px;
+
 }
+
+body {
+    img {
+        width: var(--img-width, 400px);
+    }
+}
+
 
 header {
     img {
