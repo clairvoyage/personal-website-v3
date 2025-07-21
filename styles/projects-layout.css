@@ -1,0 +1,83 @@
+@import "main.css";
+
+:root {
+    --img-width: 35vw;
+    --img-height: 30vw;
+    --header-img-height: 60vh;
+    --horizontal-rule-maxheight: 60vh;
+    --header-img-width: 80vw;
+    --grid-gap: 10vw;
+}
+
+main {
+    display: grid;
+    margin: 0;
+    grid-template-rows: 1fr auto auto auto auto auto;
+    grid-template-columns: 1fr auto;
+    max-width: 80vw;
+    gap: var(--grid-gap);
+    grid-template-areas: 
+        "alert-cali-title   alert-cali-title"
+        "alert-cali-p1      alert-cali-img1"
+        "alert-cali-img2    alert-cali-img1"
+        "alert-cali-img2    alert-cali-img1"
+        "alert-cali-img2    alert-cali-p2"
+
+        "sweet-sugar-title  sweet-sugar-title"
+        "sweet-sugar-p1     sweet-sugar-img1"
+        "sweet-sugar-img2   sweet-sugar-img1"
+        "sweet-sugar-img2   sweet-sugar-img1"
+        "sweet-sugar-img2   sweet-sugar-p2"
+        ;
+}
+
+img {
+    width: var(--img-width);
+    height: var(--img-height);
+}
+
+#header-img {
+    width: var(--header-img-width);
+    height: var(--header-img-height);
+    max-height: var(--horizontal-rule-maxheight);
+}
+
+#alert-cali-title {
+    grid-area: alert-cali-title;
+}
+
+#alert-cali-p1{
+    grid-area: "alert-cali-p1;
+}
+
+#alert-cali-img1 {
+    grid-area: alert-cali-img1;
+}
+
+#alert-cali-img2 {
+    grid-area: alert-cali-img2;
+}
+
+#alert-cali-p2 {
+    grid-area: alert-cali-p2;
+}
+
+#sweet-sugar-title {
+    grid-area: sweet-sugar-title;
+}
+
+#sweet-sugar-p1 {
+    grid-area: sweet-sugar-p1;
+}
+
+#sweet-sugar-img1 {
+    grid-area: sweet-sugar-img1;
+}
+
+#sweet-sugar-img2 {
+    grid-area: sweet-sugar-img2;
+}
+
+#sweet-sugar-p2 {
+    grid-area: sweet-sugar-p2;
+}

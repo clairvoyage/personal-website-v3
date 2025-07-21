@@ -4,6 +4,7 @@
     --img-maxheight: 80vw;
     --header-img-height: 60vh;
     --page-icon-dim: 2rem;
+    --horizontal-rule-maxheight: 60vh;
 }
 
 img {
@@ -14,6 +15,7 @@ img {
 }
 
 #header-img {
+    width: var(--img-width);
     height: var(--header-img-height);
     max-height: var(--horizontal-rule-maxheight);
 }

@@ -4,17 +4,95 @@
 }
 
 nav {
+    display: block;
     margin-bottom: 0rem;    
     font-size: var(--font-size);
-    ul {
-        padding-left: 0;
-        display: flex;
-        list-style: none;
-        justify-content: left;
-        align-items: center;
-        gap: var(--nav-gap);
+}
+
+#mini-page-links {
+    display: none;
+}
+
+#main-page-links {
+    padding-left: 0;
+    display: flex;
+    list-style: none;
+    justify-content: left;
+    align-items: center;
+    gap: var(--nav-gap);
+}
+
+
+
+@media(max-width: 1000px) {
+    #main-page-links{
+        display: none;
     }
-    li {
-        display: table-cell;
+
+    nav {
+        margin-bottom: 2rem;
+    }
+
+    #mini-page-links {
+        padding-left: 0;
+        justify-content: left;
+        list-style: none;
+        max-width: 80vw;
+        gap: 0.25em;
+        margin-bottom: 1rem;
+
+        display: grid;
+        margin: 0;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 4em 1em 6em 1em 4em;
+        grid-template-areas:
+            "page-icon filler1 index filler2 projects"
+            "articles filler3 inspirations filler4 tools"
+        ;
+    }
+
+    #header-img {
+        width: var(5em);
+        height: var(5em);
+    }
+
+    #page-icon {
+        grid-area: page-icon;
+    }
+
+    #filler1 {
+        grid-area: filler1;
+    }
+
+    #index {
+        grid-area: index;
+    }
+    
+    #projects {
+        grid-area: projects;
+    }
+
+    #filler2 {
+        grid-area: filler2;
+    }
+
+    #articles {
+        grid-area: articles;
+    }
+
+    #inspirations {
+        grid-area: inspirations;
+    }
+
+    #filler3 {
+        grid-area: filler3;
+    }
+
+    #tools {
+        grid-area: tools;
+    }
+
+    #filler4 {
+        grid-area: filler4;
     }
 }

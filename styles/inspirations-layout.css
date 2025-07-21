@@ -1,0 +1,99 @@
+@import "main.css";
+
+:root {
+    --img-width: 40vw;
+    --img-height: 30vw;
+    --header-img-height: 60vh;
+    --horizontal-rule-maxheight: 60vh;
+    --header-img-width: 80vw;
+}
+
+main {
+    display: grid;
+    margin: 0;
+    grid-template-rows: 1fr auto auto auto auto auto;
+    grid-template-columns: 1fr auto;
+    max-width: 80vw;
+    gap: 2em;
+    grid-template-areas: 
+        "websites           websites"
+        "heart-of-gold      mateusz-urbanowicz"
+        "heart-of-gold-img  mateusz-urbanowicz-img"
+        "games              games"
+        "omori              genshin-impact"
+        "omori-img          genshin-img"
+        "artists            artists"
+        "k-o-neill          porter-robinson"
+        "dragon-tea-img     wind-tempos-img";
+}
+
+img {
+    width: var(--img-width);
+    height: var(--img-height);
+}
+
+#header-img {
+    width: var(--header-img-width);
+    height: var(--header-img-height);
+    max-height: var(--horizontal-rule-maxheight);
+}
+
+#websites {
+    grid-area: websites;
+}
+
+#heart-of-gold {
+    grid-area: heart-of-gold;
+}
+
+#heart-of-gold-img {
+    grid-area: heart-of-gold-img;
+}
+
+#mateusz-urbanowicz {
+    grid-area: mateusz-urbanowicz;
+}
+
+#mateusz-urbanowicz-img {
+    grid-area: mateusz-urbanowicz-img;
+}
+
+#games {
+    grid-area: games;
+}
+
+#omori {
+    grid-area: omori;
+}
+
+#omori-img {
+    grid-area: omori-img;
+}
+
+#genshin-impact {
+    grid-area: genshin-impact;
+}
+
+#genshin-img {
+    grid-area: genshin-img;
+}
+
+#artists {
+    grid-area: artists;
+}
+
+#k-o-neill {
+    grid-area: k-o-neill;
+}
+#dragon-tea-img {
+    grid-area: dragon-tea-img;
+}
+
+#porter-robinson {
+    grid-area: porter-robinson;
+}
+
+#wind-tempos-img {
+    grid-area: wind-tempos-img;
+}
+

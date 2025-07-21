@@ -13,7 +13,7 @@
     <meta property="og:image" content="https://warm-arithmetic-bea186.netlify.app/images/green-hills-compressed.jpg">
 	<title>Articles</title>
 	<link href="images/favicon.ico" rel="icon">
-	<link href="styles/main.css" rel="stylesheet">
+	<link href="styles/articles-layout.css" rel="stylesheet">
     <link rel="canonical" href="https://warm-arithmetic-bea186.netlify.app/">
 
 </head>
@@ -23,16 +23,29 @@
           <nav>
             <ul id="main-page-links">
                 <li><a href="index.html"><img src="images/smilk.png" alt="shadow milk plush" id="page-icon"></a></li>
-                <li class="filler">*</li>
+                <filler-char>&#11049;</filler-char>
                 <li><a href="index.html">Home</a></li>
-                <li class="filler">*</li>
+                <filler-char>&#11049;</filler-char>
                 <li><a href="projects.html">Projects</a></li>
-                <li class="filler">*</li>
+                <filler-char>&#11049;</filler-char>
                 <li><a href="articles.html">Articles</a></li>
-                <li class="filler">*</li>
+                <filler-char>&#11049;</filler-char>
                 <li><a href="inspirations.html">Inspirations</a></li>
-                <li class="filler">*</li>
+                <filler-char>&#11049;</filler-char>
                 <li><a href="tools.html">Tools</a></li>
+            </ul>
+
+            <ul id="mini-page-links">
+                <li id="page-icon"><a href="index.html"><img src="images/smilk.png" alt="shadow milk plush" id="page-icon"></a></li>
+                <li id="filler1"><filler-char>&#11049;</filler-char></li>
+                <li id="index"><a href="index.html">Home</a></li>
+                <li id="filler2"><filler-char>&#11049;</filler-char></li>
+                <li id="projects"><a href="projects.html">Projects</a></li>
+                <li id="articles"><a href="articles.html">Articles</a></li>
+                <li id="filler3"><filler-char>&#11049;</filler-char></li>
+                <li id="inspirations"><a href="inspirations.html">Inspirations</a></li>
+                <li id="fille43"><filler-char>&#11049;</filler-char></li>
+                <li id="tools"><a href="tools.html">Tools</a></li>
             </ul>
           </nav><hr>
         
@@ -41,19 +54,21 @@
     </header>
 
     <main>
-            <img src="images/obsidian-homepage.jpeg" alt="My own homepage in Obsidan">
+        <img src="images/obsidian-homepage.jpeg" alt="My own homepage in Obsidan" id="obsidian-homepage">
+        <article-desc id="notion-vs-obsidian">
             <h2><a href="articles/notion-vs-obsidian.html">Notion vs. Obsidian</a></h2>
             <p>Beginner-friendly "second brain" versus a haven for customization. Which should you try?</p>
+        </article-desc>
         
-            <br><br><br>
-
-            <img src="images/lab-guy.jpeg" alt="Man wearing face mask, safety goggles, and labcoat" width="400">
+        <img src="images/lab-guy.jpeg" alt="Man wearing face mask, safety goggles, and labcoat" width="400" id="lab-guy">
+        <article-desc id="experiments">
             <h2><a href="articles/experiments.html">Experiments</a></h2>
             <p>In which Merlin does funny things with HTML tags</p>
+        </article-desc>
     </main>
 
     <footer>
-        <hr>
+        <br><br><hr>
 		<p>Merlin Ho &copy; 2025. All rights reserved</p>
 
     </footer>

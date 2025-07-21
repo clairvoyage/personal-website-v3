@@ -1,0 +1,76 @@
+@import "main.css";
+
+:root {
+    --img-width: 40vw;
+    --img-height: 30vw;
+    --header-img-height: 60vh;
+    --horizontal-rule-maxheight: 60vh;
+    --header-img-width: 80vw;
+}
+
+main {
+    display: grid;
+    margin: 0;
+    grid-template-rows: 1fr auto auto auto auto auto;
+    grid-template-columns: 1fr auto;
+    max-width: 80vw;
+    gap: 2em;
+    grid-template-areas: 
+        "coding-tools-title coding-tools-title "
+        "zoom75-img zoom-75"
+        "mac-air-img mac-air"
+        "digital-art-tools-title digital-art-tools-title"
+        "xp-pen-img xp-pen"
+        "ipad-img ipad"
+}
+
+img {
+    width: var(--img-width);
+    max-height: var(--img-height);
+}
+
+#header-img {
+    width: var(--header-img-width);
+    height: var(--header-img-height);
+    max-height: var(--horizontal-rule-maxheight);
+}
+
+#coding-tools-title {
+    grid-area: coding-tools-title;
+}
+
+#zoom75-img {
+    grid-area: zoom75-img;
+}
+
+#zoom-75 {
+    grid-area: zoom-75;
+}
+
+#mac-air-img {
+    grid-area: mac-air-img;
+}
+
+#mac-air {
+    grid-area: mac-air;
+}
+
+#digital-art-tools-title {
+    grid-area: digital-art-tools-title;
+}
+
+#xp-pen-img {
+    grid-area: xp-pen-img;
+}
+
+#xp-pen {
+    grid-area: xp-pen;
+}
+
+#ipad-img {
+    grid-area: ipad-img;
+}
+
+#ipad {
+    grid-area: ipad;
+}
