@@ -24,7 +24,7 @@ nav {
 
 
 
-@media(max-width: 1000px) {
+@media(max-width: 780px) {
     #main-page-links{
         display: none;
     }
@@ -39,12 +39,13 @@ nav {
         list-style: none;
         max-width: 80vw;
         gap: 0.25em;
+        row-gap: 0.5em;
         margin-bottom: 1rem;
 
         display: grid;
         margin: 0;
         grid-template-rows: 1fr 1fr;
-        grid-template-columns: 4em 1em 6em 1em 4em;
+        grid-template-columns: 6em 4em 8em 4em 4em;
         grid-template-areas:
             "page-icon filler1 index filler2 projects"
             "articles filler3 inspirations filler4 tools"
@@ -52,47 +53,81 @@ nav {
     }
 
     #header-img {
-        width: var(5em);
-        height: var(5em);
+        width: var(10px) !important;
+        height: var(10px) !important;
+    }
+}
+
+@media(max-width: 620px) {
+    #main-page-links{
+        display: none;
     }
 
-    #page-icon {
-        grid-area: page-icon;
+    nav {
+        margin-bottom: 2rem;
     }
 
-    #filler1 {
-        grid-area: filler1;
+    #mini-page-links {
+        padding-left: 0;
+        justify-content: left;
+        list-style: none;
+        max-width: 80vw;
+        gap: 0.25em;
+        row-gap: 0.5em;
+        margin-bottom: 1rem;
+
+        display: grid;
+        margin: 0;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 4em 3em 7em 3em 4em;
+        grid-template-areas:
+            "page-icon filler1 index filler2 projects"
+            "articles filler3 inspirations filler4 tools"
+        ;
     }
 
-    #index {
-        grid-area: index;
+    #header-img {
+        width: var(10px) !important;
+        height: var(10px) !important;
     }
-    
-    #projects {
-        grid-area: projects;
-    }
+}
 
-    #filler2 {
-        grid-area: filler2;
-    }
+#page-icon {
+    grid-area: page-icon;
+}
 
-    #articles {
-        grid-area: articles;
-    }
+#filler1 {
+    grid-area: filler1;
+}
 
-    #inspirations {
-        grid-area: inspirations;
-    }
+#index {
+    grid-area: index;
+}
 
-    #filler3 {
-        grid-area: filler3;
-    }
+#projects {
+    grid-area: projects;
+}
 
-    #tools {
-        grid-area: tools;
-    }
+#filler2 {
+    grid-area: filler2;
+}
 
-    #filler4 {
-        grid-area: filler4;
-    }
+#articles {
+    grid-area: articles;
+}
+
+#inspirations {
+    grid-area: inspirations;
+}
+
+#filler3 {
+    grid-area: filler3;
+}
+
+#tools {
+    grid-area: tools;
+}
+
+#filler4 {
+    grid-area: filler4;
 }

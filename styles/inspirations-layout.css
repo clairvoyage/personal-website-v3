@@ -3,7 +3,7 @@
 :root {
     --img-width: 40vw;
     --img-height: 30vw;
-    --header-img-height: 60vh;
+    --header-img-height: 50vh;
     --horizontal-rule-maxheight: 60vh;
     --header-img-width: 80vw;
 }
@@ -17,14 +17,14 @@ main {
     gap: 2em;
     grid-template-areas: 
         "websites           websites"
-        "heart-of-gold      mateusz-urbanowicz"
         "heart-of-gold-img  mateusz-urbanowicz-img"
+        "heart-of-gold      mateusz-urbanowicz"
         "games              games"
-        "omori              genshin-impact"
         "omori-img          genshin-img"
+        "omori              genshin-impact"
         "artists            artists"
-        "k-o-neill          porter-robinson"
-        "dragon-tea-img     wind-tempos-img";
+        "dragon-tea-img     wind-tempos-img"
+        "k-o-neill          porter-robinson";
 }
 
 img {

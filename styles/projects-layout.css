@@ -3,32 +3,34 @@
 :root {
     --img-width: 35vw;
     --img-height: 30vw;
-    --header-img-height: 60vh;
+    --header-img-height: 50vh;
     --horizontal-rule-maxheight: 60vh;
     --header-img-width: 80vw;
-    --grid-gap: 10vw;
+    --col-gap: 10vw;
+    --row-gap: 2rem;
 }
 
 main {
     display: grid;
     margin: 0;
-    grid-template-rows: 1fr auto auto auto auto auto;
+    grid-template-rows: 1fr auto auto auto auto auto auto auto auto auto;
     grid-template-columns: 1fr auto;
     max-width: 80vw;
-    gap: var(--grid-gap);
+    column-gap: var(--col-gap);
+    row-gap: var(--row-gap);
     grid-template-areas: 
         "alert-cali-title   alert-cali-title"
         "alert-cali-p1      alert-cali-img1"
         "alert-cali-img2    alert-cali-img1"
         "alert-cali-img2    alert-cali-img1"
         "alert-cali-img2    alert-cali-p2"
-
+        ". ."
+        ". ."
         "sweet-sugar-title  sweet-sugar-title"
         "sweet-sugar-p1     sweet-sugar-img1"
         "sweet-sugar-img2   sweet-sugar-img1"
         "sweet-sugar-img2   sweet-sugar-img1"
-        "sweet-sugar-img2   sweet-sugar-p2"
-        ;
+        "sweet-sugar-img2   sweet-sugar-p2";
 }
 
 img {
