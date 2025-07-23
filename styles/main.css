@@ -21,8 +21,8 @@ body {
     gap: var(--gap, 20px);
 
     box-sizing: border-box;
-    padding: 0px;
-    border-width: 0px;
+    padding: 0;
+    border-width: 0;
     margin: var(--margin, 2vw 10vw);
     background-color: var(--bg-color, #FFF);
     color: var(--text-color, #000);
@@ -58,7 +58,7 @@ a:hover {
   box-shadow: inset 200px 0 0 0 #c0c19e;
 }
 
-filler-char {
+#filler-char {
     z-index: -1;
 }
 
