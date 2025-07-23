@@ -1,27 +1,18 @@
 @import "main.css";
 
-:root {
-    --img-width: 35vw;
-    --img-height: 30vw;
-    --header-img-height: 50vh;
-    --horizontal-rule-maxheight: 60vh;
-    --header-img-width: 80vw;
-    --grid-gap: 8vw;
-}
-
 main {
     display: grid;
     margin: 0;
     grid-template-rows: 1fr auto auto auto auto auto;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 38vw 38vw;
     gap: var(--grid-gap);
     grid-template-areas: 
         "obsidian-homepage lab-guy"
         "notion-vs-obsidian experiments";
 
     img {
-        width: var(--img-width, 400px);
-        height: var(--img-height, 300px);
+        width: var(--img-width-twocol, 400px);
+        height: var(--img-height-twocol, 300px);
     }
 }
 

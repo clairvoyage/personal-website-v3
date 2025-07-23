@@ -1,19 +1,11 @@
 @import "main.css";
 
-:root {
-    --img-width: 40vw;
-    --img-height: 30vw;
-    --header-img-height: 50vh;
-    --horizontal-rule-maxheight: 60vh;
-    --header-img-width: 80vw;
-}
-
 main {
     display: grid;
     margin: 0;
     grid-template-rows: 1fr auto auto auto auto auto;
-    grid-template-columns: 1fr auto;
-    gap: 2em;
+    grid-template-columns: 40vw 40vw;
+    gap: var(--grid-gap, 10px);
     grid-template-areas: 
         "coding-tools-title coding-tools-title "
         "zoom75-img zoom-75"
@@ -23,9 +15,11 @@ main {
         "ipad-img ipad"
 }
 
-img {
-    width: var(--img-width, 400px);
-    height: var(--img-heigh, 300px);
+main {
+    img {
+        width: var(--img-width-twocol, 400px);
+        height: var(--img-height-twocol, 300px);
+    }
 }
 
 #coding-tools-title {

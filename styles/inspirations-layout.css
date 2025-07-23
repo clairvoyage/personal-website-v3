@@ -1,18 +1,10 @@
 @import "main.css";
 
-:root {
-    --img-width: 40vw;
-    --img-height: 30vw;
-    --header-img-height: 50vh;
-    --horizontal-rule-maxheight: 60vh;
-    --header-img-width: 80vw;
-}
-
 main {
     display: grid;
     margin: 0;
     grid-template-rows: 1fr auto auto auto auto auto;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 38vw 38vw;
     gap: 2em;
     grid-template-areas: 
         "websites           websites"
@@ -26,11 +18,12 @@ main {
         "k-o-neill          porter-robinson";
 }
 
-img {
-    width: var(--img-width, 400px);
-    height: var(--img-heigh, 300px);
+main {
+    img {
+        width: var(--img-width-twocol, 400px);
+        height: var(--img-height-twocol, 300px);
+    }
 }
-
 #websites {
     grid-area: websites;
 }
