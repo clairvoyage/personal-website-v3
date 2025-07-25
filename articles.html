@@ -3,19 +3,20 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="description" content="Some written articles by Merlin">
 	<meta name="keywords" content="HTML, CSS, JavaScript">
 	<meta name="author" content="Merlin Ho">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Articles">
     <meta property="og:url" content="https://warm-arithmetic-bea186.netlify.app/">
-    <meta property="og:description" content="Merlin's articles page">
     <meta property="og:image" content="https://warm-arithmetic-bea186.netlify.app/images/green-hills-compressed.jpg">
-	<title>Articles</title>
 	<link href="images/favicon.ico" rel="icon">
-	<link href="styles/articles-layout.css" rel="stylesheet">
     <link rel="canonical" href="https://warm-arithmetic-bea186.netlify.app/">
 
+
+    <title>Articles</title>
+    <meta property="og:description" content="Merlin's articles page">
+    <meta name="description" content="Some written articles by Merlin">
+    <meta property="og:title" content="Articles">
+    <link href="styles/articles-layout.css" rel="stylesheet">
 </head>
 
 <body>
@@ -77,9 +78,11 @@
     </main>
 
     <footer>
-        <br><br><hr>
-		<p>Merlin Ho &copy; 2025. All rights reserved</p>
-
+        <template id="footer-template">
+            <br><br><hr>
+            <p>Merlin Ho &copy; 2025. All rights reserved</p>
+            <a href="contact-form.html">Contact me</a>
+        </template>
     </footer>
 </body>
 </html>
