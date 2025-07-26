@@ -1,0 +1,13 @@
+@import "main.css";
+
+textarea {
+    font-family: wittgenstein-regular, serif;
+    font-size: 80%;
+    resize: none;
+    width: 80vw;
+    height: 6vh;
+}
+
+#comments {
+    height: 20vh;
+}

@@ -8,7 +8,7 @@ main {
     gap: var(--grid-gap, 10px);
     grid-template-areas: 
         "coding-tools-title coding-tools-title "
-        "zoom75-img zoom-75"
+        "zoom75-img qk80-mk2"
         "mac-air-img mac-air"
         "digital-art-tools-title digital-art-tools-title"
         "xp-pen-img xp-pen"
@@ -30,8 +30,8 @@ main {
     grid-area: zoom75-img;
 }
 
-#zoom-75 {
-    grid-area: zoom-75;
+#qk80-mk2 {
+    grid-area: qk80-mk2;
 }
 
 #mac-air-img {

@@ -41,7 +41,7 @@ nav {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 6em 4em 8em 4em 4em;
         grid-template-areas:
-            "page-icon filler1 index filler2 projects"
+            "nav-icon filler1 index filler2 projects"
             "articles filler3 inspirations filler4 tools"
         ;
     }
@@ -74,7 +74,7 @@ nav {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 4em 2em 7em 2em 4em;
         grid-template-areas:
-            "page-icon filler1 index filler2 projects"
+            "nav-icon filler1 index filler2 projects"
             "articles filler3 inspirations filler4 tools"
         ;
     }
@@ -85,8 +85,8 @@ nav {
     }
 }
 
-#page-icon {
-    grid-area: page-icon;
+#nav-icon {
+    grid-area: nav-icon;
 }
 
 #filler1 {
