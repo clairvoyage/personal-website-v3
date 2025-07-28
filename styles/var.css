@@ -15,16 +15,17 @@
     --main-font: wittgenstein-regular;
     --header-font: wittgenstein-semibold-italic;
     --text-margin: 0rem 0rem 1rem 0rem;
-    --text-font-size: 1.2rem;
+    --text-font-size: 1.1rem;
     --text-line-height: 1.2em;
     --bottom-margin: 0.5rem;
 
 
     --nav-gap: 2rem;
+    --nav-font-size: 1rem;
 
     --img-width: 80vw;
     --img-maxheight: 80vw;
-    --header-img-height: 50vh;
+    --header-img-height: 35vh;
     --header-img-width: 80vw;
     --page-icon-dim: 2rem;
 

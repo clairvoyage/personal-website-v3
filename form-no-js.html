@@ -17,7 +17,6 @@
     <meta name="description" content="Contact Merlin">
     <meta property="og:title" content="Contact Me">
     <link href="styles/contact-form-layout.css" rel="stylesheet">
-    <script src='scripts/form-validate.js'></script>
 </head>
 
 <body>
@@ -59,29 +58,26 @@
 </header>
 
 <main>
-    <form name="contact-form" id="contact-form" action="https://httpbin.org/post" method="post" novalidate>
+    <form name="contact-form" action="https://httpbin.org/post" method="post">
         <label for="name">Name<required-mark>*</required-mark>:</label>
         <input
-            type="text" id="name" name="name" placeholder="Ex. John Doe"
-            autofocus required pattern="^[a-zA-Z +]{1,60}">
-        <error-msg id="name-err" aria-live="polite" class="error"></error-msg>
+                type="text" id="name" name="name" placeholder="Ex. John Doe"
+                autofocus required pattern="^[a-zA-Z +]{1,64}">
+        <error-msg>Please enter your name</error-msg>
 
         <label for="email">Email<required-mark>*</required-mark>:</label>
         <input
-            type="email" id="email" name="email" placeholder="Ex. example@email.com"
-            minlength="1" maxlength="60" required
-            pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"> <!-- regex from geeksforgeeks.org-->
-        <error-msg aria-live="polite" class="error"></error-msg>
+                type="email" id="email" name="email" placeholder="Ex. example@email.com"
+                minlength="1" maxlength="64" required
+                pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"> <!-- regex expression from geeksforgeeks.org-->
+        <error-msg>Please enter a valid email address</error-msg>
 
         <label for="comments">Comments<required-mark>*</required-mark>:</label>
         <textarea
-            id="comments" name="comments" required
-            minlength="1" maxlength="1000"
+                id="comments" name="comments" required
+                minlength="1" maxlength="1000"
         ></textarea>
-        <span id="char-count"></span>
-        <error-msg aria-live="polite" class="error"></error-msg>
-
-        <input type="hidden" id="form-errors" name="form_errors" value="">
+        <error-msg>Please enter a comment</error-msg>
 
         <input type="submit" id="submit" value="Submit">
 

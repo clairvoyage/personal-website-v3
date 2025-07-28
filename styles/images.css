@@ -14,7 +14,7 @@ body {
 header {
     img {
         width: var(--header-img-width, 800px);
-        height: var(--header-img-height, 400px);
+        height: var(--header-img-height, 300px);
     }
 }
 

@@ -15,9 +15,10 @@
 
 body {
     display: grid;
-    grid-template-areas: "header" "main" "footer";
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header" "main" "footer";
+    justify-content: left;
     gap: var(--gap, 20px);
 
     box-sizing: border-box;
@@ -39,7 +40,9 @@ main {
 }
 
 footer {
+    margin: 2rem 0;
     grid-area: footer;
+    text-align: center;
 }
 
 hr {
@@ -55,7 +58,7 @@ a {
 }
 a:hover {
   color: #3a422a;
-  box-shadow: inset 200px 0 0 0 #c0c19e;
+  box-shadow: inset 500px 0 0 0 #c0c19e;
 }
 
 #filler-char {

@@ -1,13 +1,55 @@
 @import "main.css";
 
-textarea {
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: var(--font-size);
+}
+
+input, textarea, #submit {
     font-family: wittgenstein-regular, serif;
-    font-size: 80%;
+    font-size: 1rem;
+
     resize: none;
-    width: 80vw;
-    height: 6vh;
+    height: 2rem;
+    padding: 0.6rem 0.6rem;
+
+    background-color: #f6f6f2;
+    border: solid 2px #c9cac4;
+    color: rgba(35, 33, 33, 0.85);
+}
+
+input:invalid, textarea:invalid {
+    border-color: darkred;
+    border-width: 2px;
 }
 
 #comments {
     height: 20vh;
+}
+
+#submit {
+    color: #454542;
+    margin: 2.5vh 0;
+    height: 6vh;
+    width: auto;
+    background-color: #bfbfaa;
+    font-size: 1.3rem;
+    border: solid 2px #b9bab1;
+}
+
+error-msg {
+    color: darkred;
+    margin-bottom: 1rem;
+}
+
+required-mark {
+    color: darkred;
+}
+
+#char-count {
+    text-align: end;
 }

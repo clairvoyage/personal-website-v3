@@ -17,3 +17,9 @@ p {
     margin: var(--text-margin, 10px);
     font-size: var(--text-font-size, 15px);
 }
+
+footer {
+    p {
+        font-size: 1rem;
+    }
+}
