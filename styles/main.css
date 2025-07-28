@@ -2,6 +2,8 @@
 @import "images.css";
 @import "header-paragraph.css";
 @import "nav.css";
+@import "interactables.css";
+@import "adapt-screen.css";
 
 @font-face {
     font-family: wittgenstein-regular;
@@ -31,8 +33,9 @@ body {
 }
 
 header {
-    margin-top: 4vh;
     grid-area: header;
+    margin-top: 4vh;
+    position: relative;
 }
 
 main {
@@ -49,21 +52,8 @@ hr {
     margin: var(--horizontal-rule-margin);
 }
 
-a {
-  box-shadow: inset 0 0 0 0 #c1c1a5;
-  color: #3a422a;
-  padding: 0 .25rem;
-  margin: 0 -.25rem;
-  transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
-}
-a:hover {
-  color: #3a422a;
-  box-shadow: inset 500px 0 0 0 #c0c19e;
-}
-
 #filler-char {
     z-index: -1;
 }
-
 
 

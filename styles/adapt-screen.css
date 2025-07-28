@@ -1,0 +1,47 @@
+@media(max-width: 900px) {
+    #main-page-links{
+        display: flex;
+        gap: 1rem;
+    }
+
+    #mini-page-links {
+        display: none;
+    }
+}
+
+@media(max-width: 700px) {
+    #main-page-links{
+        display: none;
+    }
+
+    nav {
+        margin-bottom: 1rem;
+    }
+
+    #mini-page-links {
+        padding-left: 0;
+        justify-content: left;
+        list-style: none;
+        max-width: 80vw;
+        gap: 0;
+        row-gap: 0;
+
+        display: grid;
+        margin: 0;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 5em 3em 7em 3em 6em;
+        grid-template-areas:
+            "nav-icon filler1 index filler2 projects"
+            "articles filler3 inspirations filler4 tools"
+    ;
+    }
+
+    #header-img {
+        width: var(10px) !important;
+        height: var(10px) !important;
+    }
+
+    #theme-change{
+        top: 7.5rem;
+    }
+}

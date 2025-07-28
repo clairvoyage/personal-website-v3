@@ -1,0 +1,24 @@
+#theme-change {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-family: wittgenstein-regular, serif;
+    background-color: transparent;
+    border: none;
+    text-decoration-line: underline;
+
+    position: absolute;
+    top: 6rem;
+    right: 0;
+}
+
+a, #theme-change {
+    box-shadow: inset 0 0 0 0 #c1c1a5;
+    color: #3a422a;
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
+}
+a:hover, #theme-change:hover {
+    color: #3a422a;
+    box-shadow: inset 500px 0 0 0 #c0c19e;
+}
