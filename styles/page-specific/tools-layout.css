@@ -4,7 +4,7 @@ main {
     display: grid;
     margin: 0;
     grid-template-rows: 1fr auto auto auto auto auto;
-    grid-template-columns: 40vw 40vw;
+    grid-template-columns: 39vw 39vw;
     gap: var(--grid-gap, 10px);
     grid-template-areas: 
         "coding-tools-title coding-tools-title "

@@ -3,18 +3,21 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="description" content="Merlin's preferred tools for coding and illustration">
 	<meta name="keywords" content="HTML, CSS, JavaScript">
 	<meta name="author" content="Merlin Ho">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Tools">
     <meta property="og:url" content="https://warm-arithmetic-bea186.netlify.app/">
-    <meta property="og:description" content="My tools for coding and digital art">
     <meta property="og:image" content="https://warm-arithmetic-bea186.netlify.app/images/keyboard.png">
-	<title>Tools</title>
-	<link href="images/favicon.ico" rel="icon">
-	<link href="styles/page-specific/tools-layout.css" rel="stylesheet">
+    <link href="images/favicon.ico" rel="icon">
     <link rel="canonical" href="https://warm-arithmetic-bea186.netlify.app/">
+
+    <title>Tools</title>
+    <script src='scripts/theme-change.js'></script>
+    <link href="styles/page-specific/tools-layout.css" rel="stylesheet">
+    <meta property="og:description" content="My tools for coding and digital art">
+    <meta name="description" content="Merlin's preferred tools for coding and illustration">
+    <meta property="og:title" content="Tools">
+
 
 </head>
 
@@ -47,7 +50,9 @@
                   <li id="filler4"><filler-char>&#11049;</filler-char></li>
                   <li id="tools"><a href="tools.html">Tools</a></li>
               </ul>
-          </nav><hr>    
+        </nav><hr><br>
+
+        <button type="button" id="theme-change" name="theme-change" hidden>Change theme</button>
 
         <picture>
             <source media="(min-width: 600px)" srcset="images/hills.jpg">           
@@ -111,7 +116,10 @@
 
     <footer>
         <br><br><hr>
-		<p>Merlin Ho &copy; 2025. All rights reserved</p>
+        <p>
+            Merlin Ho &copy; 2025. All rights reserved <br>
+            <a href="contact-form.html">Contact me</a>
+        </p>
 
     </footer>
 </body>

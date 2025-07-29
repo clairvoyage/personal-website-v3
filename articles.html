@@ -14,10 +14,10 @@
 
     <title>Articles</title>
     <script src='scripts/theme-change.js'></script>
+    <link href="styles/page-specific/articles-layout.css" rel="stylesheet">
     <meta property="og:description" content="Merlin's articles page">
     <meta name="description" content="Some written articles by Merlin">
     <meta property="og:title" content="Articles">
-    <link href="styles/page-specific/articles-layout.css" rel="stylesheet">
 </head>
 
 <body>
@@ -49,8 +49,11 @@
                 <li id="filler4"><filler-char>&#11049;</filler-char></li>
                 <li id="tools"><a href="tools.html">Tools</a></li>
             </ul>
-          </nav><hr>
-        
+          </nav>
+        <hr><br>
+
+        <button type="button" id="theme-change" name="theme-change" hidden>Change theme</button>
+
         <picture>
             <source media="(min-width: 600px)" srcset="images/hills.jpg">           
             <img src="images/small-images/hills.jpeg" alt="Green hills" style="object-fit: cover;">
