@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c8b71aa-37d3-4896-b132-7b3624cdbeba" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/personal-website-v2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/articles.html" beforeDir="false" afterPath="$PROJECT_DIR$/articles.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/articles/experiments.html" beforeDir="false" afterPath="$PROJECT_DIR$/articles/experiments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/articles/notion-vs-obsidian.html" beforeDir="false" afterPath="$PROJECT_DIR$/articles/notion-vs-obsidian.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inspirations.html" beforeDir="false" afterPath="$PROJECT_DIR$/inspirations.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/form-validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/form-validate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/theme-change.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/theme-change.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/page-specific/tools-layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/page-specific/tools-layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools.html" beforeDir="false" afterPath="$PROJECT_DIR$/tools.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/page-specific/contact-form-layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/page-specific/contact-form-layout.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +100,7 @@
       <workItem from="1753425355711" duration="987000" />
       <workItem from="1753475878094" duration="32258000" />
       <workItem from="1753655783503" duration="27942000" />
-      <workItem from="1753745844186" duration="14009000" />
+      <workItem from="1753745844186" duration="20048000" />
     </task>
     <servers />
   </component>

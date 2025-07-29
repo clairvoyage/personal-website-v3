@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const form_errors_field = document.getElementById("form-errors");
 
     let form_errors = [];
-
     name.addEventListener("input", function (event)  {
         if(name.validity.valid) {
             name_error.textContent = "";

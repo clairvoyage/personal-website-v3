@@ -1,23 +1,35 @@
 document.addEventListener("DOMContentLoaded", function (event) {
+    // alert("curr theme is " + localStorage.getItem("curr_theme"));
+
     const theme_change_btn = document.getElementById("theme-change");
     const page_icon = document.getElementsByClassName("page-icon")[0];
     const page_icon_mini = document.getElementsByClassName("page-icon")[1];
 
     theme_change_btn.removeAttribute("hidden");
+    set_theme();
     theme_change_btn.addEventListener("click", function() {
-        if(localStorage.getItem("curr_theme") === null) {
-            localStorage.setItem("curr_theme", "light");
+        change_theme();
+    });
+
+    function set_theme() {
+        if(localStorage.getItem("curr_theme") === "light") {
             set_light_theme();
-        } else if(localStorage.getItem("curr_theme") === "light") {
+        }
+        else if (localStorage.getItem("curr_theme") === "dark") {
+            set_dark_theme();
+        }
+    }
+
+    function change_theme() {
+        if(localStorage.getItem("curr_theme") === "light") {
             localStorage.setItem("curr_theme", "dark");
             set_dark_theme();
         }
-
         else if (localStorage.getItem("curr_theme") === "dark") {
             localStorage.setItem("curr_theme", "light");
             set_light_theme();
         }
-    });
+    }
 
     function set_light_theme() {
         set_icon();
