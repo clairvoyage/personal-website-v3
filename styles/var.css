@@ -1,7 +1,17 @@
 :root {
     --bg-color: #EEEDE8;
     --text-color: #292626;
-    
+    --link-color: #3a422a;
+    --link-hover-bg-color: #c1c1a5;
+    --form-field-color:#f6f6f2;
+    --form-field-border: #c9cac4;
+    --invalid-text-color: #ba0101;
+    --invalid-border-color: #ba0101;
+
+    --submit-color: #454542;
+    --submit-background-color: #bfbfaa;
+    --submit-border: #b9bab1;
+
     --margin: 2vw 10vw;
     --gap: 0.5rem;
     --col-gap: 10vw;

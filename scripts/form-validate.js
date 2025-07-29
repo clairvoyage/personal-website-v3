@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function (event) {
-
     const form = document.getElementsByTagName("form")[0];
     const name = document.getElementById("name");
     const name_error = document.querySelector("#name + error-msg");
@@ -38,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
 
     form.addEventListener("submit", function (event) {
-        if(!name.validity.valid) {
+        if(!name.validity.valid || !email.validity.valid || !comments.validity.valid) {
             show_error();
             event.preventDefault();
         }

@@ -1,4 +1,4 @@
-@import "main.css";
+@import "../main.css";
 
 form {
     display: flex;
@@ -17,13 +17,13 @@ input, textarea, #submit {
     height: 2rem;
     padding: 0.6rem 0.6rem;
 
-    background-color: #f6f6f2;
-    border: solid 2px #c9cac4;
-    color: rgba(35, 33, 33, 0.85);
+    background-color: var(--form-field-color);
+    border: solid 2px var(--form-field-border);
+    color: var(--text-color);
 }
 
 input:invalid, textarea:invalid {
-    border-color: darkred;
+    border-color: var(--invalid-border-color);
     border-width: 2px;
 }
 
@@ -32,22 +32,23 @@ input:invalid, textarea:invalid {
 }
 
 #submit {
-    color: #454542;
+    color: var(--submit-color);
     margin: 2.5vh 0;
     height: 6vh;
     width: auto;
-    background-color: #bfbfaa;
+    background-color: var(--submit-background-color);
     font-size: 1.3rem;
-    border: solid 2px #b9bab1;
+    border: solid 2px var(--submit-border);
 }
 
 error-msg {
-    color: darkred;
+    color: var(--invalid-text-color);
+    margin-top: 0.5rem;
     margin-bottom: 1rem;
 }
 
 required-mark {
-    color: darkred;
+    color: var(--invalid-text-color);
 }
 
 #char-count {
